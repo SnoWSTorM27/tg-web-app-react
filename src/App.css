@@ -15,3 +15,9 @@
   border: none;
   border-radius: 8px;
 }
+.red {
+  margin: 5px;
+  width: 100%;
+  background-color: red;
+  color: #fff;
+}
