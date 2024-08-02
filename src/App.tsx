@@ -22,16 +22,40 @@ function App() {
     })
   };
   const showConfirm = () => {
-    tg.showConfirm("Готов?", () => {
-      setText("ready");
+    tg.showConfirm("Готов?", (ok) => {
+      setText( ok ? "ready": "not ready");
+    })
+  };
+  const showPopup = () => {
+    tg.showPopup({
+      title: "Название окна",
+      message: "Это сообщение окна",
+      buttons: [
+        { id: "1", type: "ok", text: "текст на ок" },
+        { id: "2", type: "cancel", text: "текст на cancel" },
+        { id: "3", type: "close", text: "текст на close" },
+        { id: "4", type: "default", text: "текст на default" },
+        { id: "5", type: "destructive", text: "текст на destructive" }
+      ]
+    }, (data) => {
+      setText("Popup");
+    })
+  };
+  const showQRPopup = () => {
+    tg.showScanQrPopup({
+      text: "сканируй код"
+    }, (data) => {
+      setText("QR popup");
     })
   };
   const openTGLink = () => {
     tg.openTelegramLink("https://t.me/hamster_kombaT_bot");
   };
-  // const openInvoice = () => {
-  //   tg.openInvoice("https://t.me/hamster_kombaT_bot");
-  // };
+  const openInvoice = () => {
+    tg.openInvoice("https://t.me/hamster_kombaT_bot", () => {
+      setText("invoice");
+    });
+  };
 
   return (
     <div className='App'>
@@ -40,7 +64,9 @@ function App() {
       <button className='btn' onClick={showConfirm}>Open Confirm</button>
       <button className='btn' onClick={openTGLink}>Open Link</button>
       <button className='btn' onClick={requestContacts}>Request Contact</button>
-      {/* <button className='btn' onClick={tg.openInvoice("https://t.me")}>Open Invoice</button> */}
+      <button className='btn' onClick={showPopup}>show Popup</button>
+      <button className='btn' onClick={showQRPopup}>show QR popup</button>
+      <button className='btn' onClick={openInvoice}>Open Invoice</button>
       <div>{tg.platform}</div>
       <div className='red'>{text}</div>
     </div>

@@ -17,7 +17,8 @@
 }
 .red {
   margin: 5px;
-  width: 100%;
+  width: 50%;
+  text-align: center;
   background-color: red;
   color: #fff;
 }
