@@ -19,12 +19,16 @@ function App() {
   const changeExpand = () => {
     tg.expand()
   };
+  const openTGLink = () => {
+    tg.openTelegramLink("https://t.me/SnoWSTorM27")
+  };
 
   return (
     <div className='App'>
-      <button onClick={onClose}>Закрыть</button>
-      <button onClick={showAlert}>Alert</button>
-      <button onClick={changeExpand}>expand</button>
+      <button className='btn' onClick={onClose}>Закрыть</button>
+      <button className='btn' onClick={showAlert}>Alert</button>
+      <button className='btn' onClick={changeExpand}>expand</button>
+      <button className='btn' onClick={openTGLink}>Open Link</button>
       <div>{tg.platform}</div>
       <div>{tg.isExpanded}</div>
     </div>
