@@ -13,11 +13,20 @@ function App() {
   const onClose = () => {
     tg.close()
   };
+  const showAlert = () => {
+    tg.showAlert("Приём алерт", ()=>{})
+  };
+  const changeExpand = () => {
+    tg.expand()
+  };
 
   return (
     <div className='App'>
       <button onClick={onClose}>Закрыть</button>
-      <pre>{tg.initData}</pre>
+      <button onClick={showAlert}>Alert</button>
+      <button onClick={changeExpand}>expand</button>
+      <div>{tg.platform}</div>
+      <div>{tg.isExpanded}</div>
     </div>
   )
 }
