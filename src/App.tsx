@@ -37,14 +37,14 @@ function App() {
         { id: "4", type: "default", text: "текст на default" },
         { id: "5", type: "destructive", text: "текст на destructive" }
       ]
-    }, (data) => {
+    }, () => {
       setText("Popup");
     })
   };
   const showQRPopup = () => {
     tg.showScanQrPopup({
       text: "сканируй код"
-    }, (data) => {
+    }, () => {
       setText("QR popup");
     })
   };
