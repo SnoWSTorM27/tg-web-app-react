@@ -31,9 +31,9 @@ function App() {
       title: "Название окна",
       message: "Это сообщение окна",
       buttons: [
-        { id: "1", type: "ok", text: "текст на ок" },
+        { type: "ok", text: "текст на ок" },
         // { id: "2", type: "cancel", text: "текст на cancel" },
-        { id: "3", type: "close", text: "текст на close" },
+        { type: "close", text: "текст на close" }
         // { id: "4", type: "default", text: "текст на default" },
         // { id: "5", type: "destructive", text: "текст на destructive" }
       ]
