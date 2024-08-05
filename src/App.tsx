@@ -32,10 +32,10 @@ function App() {
       message: "Это сообщение окна",
       buttons: [
         { id: "1", type: "ok", text: "текст на ок" },
-        { id: "2", type: "cancel", text: "текст на cancel" },
+        // { id: "2", type: "cancel", text: "текст на cancel" },
         { id: "3", type: "close", text: "текст на close" },
-        { id: "4", type: "default", text: "текст на default" },
-        { id: "5", type: "destructive", text: "текст на destructive" }
+        // { id: "4", type: "default", text: "текст на default" },
+        // { id: "5", type: "destructive", text: "текст на destructive" }
       ]
     }, () => {
       setText("Popup");
@@ -44,8 +44,8 @@ function App() {
   const showQRPopup = () => {
     tg.showScanQrPopup({
       text: "сканируй код"
-    }, () => {
-      setText("QR popup");
+    }, (data) => {
+      setText(`QR popup ${data}}`);
     })
   };
   const openTGLink = () => {
