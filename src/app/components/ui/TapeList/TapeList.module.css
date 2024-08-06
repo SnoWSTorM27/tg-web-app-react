@@ -1,0 +1,38 @@
+.TapeList {
+  background-color: var(--Background-BG-Primary, #21282E);
+  color: #fff;
+  width: 100%;
+}
+
+.TapeList h4 {
+  margin-bottom: 8px;
+}
+.TapeList ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.TapeList .Btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  width: 100%;
+  text-align: center;
+  background: var(--Background-BG-Secondary, #2D3339);
+  color: var(--Content-Contetn-Primary, #F6F6F6);
+  font-family: "Poppins";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  border: none;
+  white-space: nowrap;
+  padding: 10px 14px;
+}
+
+.TapeList .Btn.active {
+  background: var(--Background-BG-Red, #EB4141);
+}

@@ -1,0 +1,17 @@
+.MainButton {
+  width: 100%;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 auto;
+  color: var(--Content-Primary, #F6F6F6);
+  font-family: "Poppins";
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  border-radius: 16px;
+  border: none;
+  background: var(--Background-Btn-Active, linear-gradient(90deg, #2D4EC2 0%, #3CAAFA 100%));
+}

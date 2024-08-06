@@ -1,3 +1,22 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url('./app/assets/fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('./app/assets/fonts/Poppins-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('./app/assets/fonts/Poppins-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +24,42 @@
 }
 
 body {
-  background: var(--tg-theme-bg-color);
-  color: var(--tg-theme-text-color);
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  /* background: var(--tg-theme-bg-color);
+  color: var(--tg-theme-text-color); */
+}
+
+:root {
+  --Background-BG-Primary: #21282E;
+  --Background-BG-Secondary: #2D3339;
+  --Background-Btn-Active: linear-gradient(90deg, #2D4EC2 0%, #3CAAFA 100%);;
+  --Background-BG-Red: #EB4141;
+  --Content-Primary: #F6F6F6;
+  --Content-Secondary: #969FA9;
+}
+
+h1 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 42px;
+}
+h2 {
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+}
+h3 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+}
+h4 {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
 }

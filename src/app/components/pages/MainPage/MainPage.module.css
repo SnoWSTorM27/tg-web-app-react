@@ -1,0 +1,4 @@
+.MainPage {
+  background-color: var(--Background-BG-Primary, #21282E);
+  color: #fff;
+}

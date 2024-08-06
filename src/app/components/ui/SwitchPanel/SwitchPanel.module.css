@@ -1,0 +1,47 @@
+.SwitchPanel {
+  background-color: var(--Background-BG-Primary, #21282E);
+  color: #fff;
+  width: 100%;
+}
+
+/* .SwitchPanel .Wrapper {
+  padding: 16px 16px 40px 16px;
+} */
+
+.SwitchPanel .Panel {
+  padding: 0 20px 8px;
+  position: sticky;
+  top: 44px;
+  z-index: 10;
+  background: inherit;
+}
+
+.SwitchPanel .Background {
+  width: 100%;
+  background: var(--Background-BG-Secondary, #2D3339);
+  padding: 4px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.SwitchPanel .Btn {
+  border-radius: 20px;
+  width: 50%;
+  border: none;
+  text-align: center;
+  background: var(--Background-BG-Secondary, #2D3339);
+  color: var(--Content-Contetn-Primary, #F6F6F6);
+  font-family: "Poppins";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  height: 30px;
+}
+
+.SwitchPanel .Btn.active {
+  background: var(--Background-BG-Red, #EB4141);
+}

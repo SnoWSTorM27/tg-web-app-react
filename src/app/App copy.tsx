@@ -3,7 +3,10 @@ import './App.css'
 
 function App() {
   const tg: WebApp = window.Telegram.WebApp;
+  const telegram: Telegram = window.Telegram;
   const [text, setText] = useState("");
+  console.log(telegram);
+  
   
 
   useEffect(() => {
@@ -68,6 +71,7 @@ function App() {
       <button className='btn' onClick={showQRPopup}>show QR popup</button>
       <button className='btn' onClick={openInvoice}>Open Invoice</button>
       <div>{tg.platform}</div>
+      <h3>{tg.platform}</h3>
       <div className='red'>{text}</div>
     </div>
   )
