@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './CharacterPage.module.css';
 import SwitchPanel from '../../ui/SwitchPanel';
 import TapeList from '../../ui/TapeList';
@@ -12,15 +12,21 @@ export default function CharacterPage() {
   const history = useHistory();
   const [ gender, setGender ] = useState(true);
   const [ nationality, setNationality ] = useState("");
+  const [ isValid, setIsValid ] = useState(false);
+
+  useEffect(() => {
+    if (nationality) setIsValid(true);
+  }, [nationality]);
   
   const handleActivedNationality = (item: Nationality) => {
     setNationality(item.id);
   };
 
+
   return (
     <div className={styles.CharacterPage}>
       <div className={styles.Wrapper}>
-        <div className={styles.wrap}>
+        <div className={styles.WrapHeader}>
           <h1>Welcome to MMA Fighters</h1>
           <div className={styles.Description} >Choose your character</div>
         </div>
@@ -36,19 +42,21 @@ export default function CharacterPage() {
             rightBtnTitle='Female'
             onSwitch={setGender}
             active={gender}
-            style={{ marginBottom: "8px" }}
-            />
+            style={{ marginBottom: "24px" }}
+          />
           <TapeList
             heading='Nationality'
             items={nationalities}
             onActive={handleActivedNationality}
             active={nationality}
-            />
+            style={{ marginBottom: "24px" }}
+          />
         </div>
       </div>
       <MainButton
         heading='Continue'
         onTouch={() => history.push('/')}
+        disabled={!isValid}
       />
     </div>
   )

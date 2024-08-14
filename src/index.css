@@ -33,10 +33,17 @@ body {
 :root {
   --Background-BG-Primary: #21282E;
   --Background-BG-Secondary: #2D3339;
-  --Background-Btn-Active: linear-gradient(90deg, #2D4EC2 0%, #3CAAFA 100%);;
+  --Background-BG-Tertiary: #363D44;
+  --Background-BG-Green: #6EA832;
+  --Transparent-BG-Yellow: rgba(229, 195, 107, 0.40);
+  --Background-Btn-Active: linear-gradient(90deg, #2D4EC2 0%, #3CAAFA 100%);
+  --Background-Btn-Inactive: #4D5660;
   --Background-BG-Red: #EB4141;
   --Content-Primary: #F6F6F6;
   --Content-Secondary: #969FA9;
+  --Content-Tertiary: #7A838C;
+  --Content-Yellow: #E5B945;
+  --Hover-BG-Grey: #363D44;
 }
 
 h1 {

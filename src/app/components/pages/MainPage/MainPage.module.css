@@ -1,4 +1,32 @@
 .MainPage {
   background-color: var(--Background-BG-Primary, #21282E);
   color: #fff;
+  min-height: 100vh;
+  padding: 16px 16px 106px 16px;
+  display: flex;
+  flex-direction: column;
+}
+.MainPage .Events {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.MainPage .Image img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.MainPage .Image {
+  width: 100%;
+  position: relative;
+  padding-top: 56.25%;
+  height: 0;
+  flex: 1 1 auto;
 }

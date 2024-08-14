@@ -1,0 +1,91 @@
+.Navbar {
+  background-color: var(--Background-BG-Tertiary, #363D44);
+  color: #fff;
+  position: fixed;
+  bottom: 16px;
+  left: 8px;
+  right: 8px;
+  z-index: 10;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 70px;
+}
+.Navbar ul {
+  border-radius: 40px;
+  width: 90%;
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+.Navbar li {
+  max-height: 70px;
+  width: 20%;
+}
+
+.Navbar .MainBtn {
+  background: var(--Background-BG-Red, #EB4141);
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 18px;
+  transform: translate(0,-25%) rotate(45deg);
+  margin: 0 5px 0;
+}
+.Navbar .MainBtn .Icon {
+  width: 40px;
+  height: 40px;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.Navbar .MainBtn .Icon svg {
+  color: var(--Content-Primary, #F6F6F6);
+}
+
+.Navbar .Btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  background: var(--Background-BG-Tertiary, #363D44);
+  font-family: "Poppins";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  border: none;
+  white-space: nowrap;
+  padding: 12px 5px;
+  background-repeat: 40px;
+}
+
+.Navbar .Btn.active svg path {
+  color: var(--Content-Primary, #F6F6F6);
+  stroke: var(--Content-Primary, #F6F6F6);
+}
+.Navbar .Btn.active .Title {
+  color: var(--Content-Primary, #F6F6F6);
+}
+.Navbar .Btn .Title {
+  color: var(--Content-Tertiary, #7A838C);
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px;
+}
+.Navbar .Btn .Icon {
+  width: 28px;
+  height: 28px;
+  margin-bottom: 4px;
+}
+.Navbar .Btn .Icon svg {
+  color: var(--Content-Secondary, #969696);
+}

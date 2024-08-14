@@ -15,3 +15,7 @@
   border: none;
   background: var(--Background-Btn-Active, linear-gradient(90deg, #2D4EC2 0%, #3CAAFA 100%));
 }
+
+.MainButton:disabled {
+  background: var(--Background-Btn-Inactive, #4D5660);
+}

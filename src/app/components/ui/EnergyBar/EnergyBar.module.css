@@ -1,0 +1,59 @@
+.EnergyBar {
+  background-color: var(--Background-BG-Primary, #21282E);
+  color: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.EnergyBar .Wrapper {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+.EnergyBar .Energy {
+  display: flex;
+  gap: 1px;
+}
+.EnergyBar .Energy .Silver {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 10px 6px 12px;
+}
+.EnergyBar .Energy .Gold {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px 4px 6px;
+}
+.EnergyBar .Energy .Silver .Amount{
+  color: var(--Content-Primary, #F6F6F6);
+  font-family: "Poppins";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.EnergyBar .Energy .LightningIcon {
+  width: 24px;
+  height: 24px;
+}
+.EnergyBar .Wrapper .SettingsIcon svg,
+.EnergyBar .Energy .LightningIcon svg {
+  width: 100%;
+  height: 100%;
+}
+.EnergyBar .Energy .Silver {
+  border-radius: 16px 0px 0px 16px;
+  background: var(--Background-BG-Tertiary, #363D44);
+}
+.EnergyBar .Energy .Gold {
+  border-radius: 0px 16px 16px 0px;
+  background: var(--Transparent-BG-Yellow, rgba(229, 195, 107, 0.40));
+}
+
+

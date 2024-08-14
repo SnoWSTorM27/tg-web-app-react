@@ -1,13 +1,13 @@
-import { CSSProperties } from 'react';
+import React, { CSSProperties } from 'react';
 import styles from './MainButton.module.css';
 
-type MainButtonProps = {
+interface MainButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   heading: string,
   onTouch: () => void,
   style?: CSSProperties
 };
 
-export default function MainButton({ heading, onTouch, style, ...props }:MainButtonProps) {
+const MainButton: React.FC<MainButtonProps> = ({ heading, onTouch, style, ...props }) => {
 
   return (
     <button
@@ -20,3 +20,5 @@ export default function MainButton({ heading, onTouch, style, ...props }:MainBut
     </button>
   )
 }
+
+export default MainButton;

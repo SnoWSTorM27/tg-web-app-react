@@ -1,0 +1,65 @@
+.TaskCard {
+  width: 100%;
+  min-height: 80px;
+  border: none;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+.TaskCard .Wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: start;
+}
+.TaskCard .Info {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.TaskCard .Title {
+  color: var(--Content-Secondary, #969FA9);
+  font-family: "Poppins";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+.TaskCard .Description {
+  color: var(--Content-Yellow, #E5B945);
+  font-family: "Poppins";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+.TaskCard .Reward {
+  color: var(--Content-Primary, #F6F6F6);
+  font-family: "Poppins";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+.TaskCard .Info .RewardIcon {
+  width: 20px;
+  height: 20px;
+}
+.TaskCard .Info .RewardIcon svg {
+  width: 100%;
+  height: 100%;
+}
+.TaskCard .Icon {
+  width: 40px;
+  height: 40px;
+}
+
+.TaskCard .Info .RewardIcon.silver svg {
+  color: #AAB5C6;
+}
+.TaskCard .Info .RewardIcon.gold svg {
+  color: #E6D2A2;
+}

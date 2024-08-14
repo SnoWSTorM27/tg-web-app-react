@@ -7,7 +7,7 @@
   flex-direction: column;
 }
 
-.CharacterPage .wrap {
+.CharacterPage .WrapHeader {
   margin-bottom: 8px;
 }
 .CharacterPage .Image svg{

@@ -1,3 +1,4 @@
+import { CSSProperties } from 'react';
 import styles from './TapeList.module.css';
 import { Nationality } from '../../../interfaces/nationality.type';
 
@@ -6,7 +7,7 @@ type TapeListProps = {
   items: Nationality[],
   active: string,
   onActive: (item: Nationality) => void,
-  style?: object
+  style?: CSSProperties
 };
 
 export default function TapeList({ heading, active, items, style, onActive }:TapeListProps) {

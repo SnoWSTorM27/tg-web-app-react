@@ -11,6 +11,9 @@
   border: none;
   border-radius: 8px;
 }
+.text {
+  text-wrap: wrap;
+}
 .red {
   margin: 5px;
   width: 50%;

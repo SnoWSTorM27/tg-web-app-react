@@ -1,0 +1,38 @@
+.EarnPage {
+  background-color: var(--Background-BG-Primary, #21282E);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-left: 16px;
+}
+
+.EarnPage .Header {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  position: relative;
+  height: 178px;
+}
+.EarnPage .Heading {
+  color: var(--Content-Primary, #F6F6F6);
+  font-family: "Poppins";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 54px;
+}
+
+.EarnPage .ExpLogo {
+  position: absolute;
+  top: 0;
+  right: 0;  
+  height: 178px;
+}
+.EarnPage .Wrapper {
+  padding: 10px 16px 106px 0px;
+}
+.EarnPage .List {
+  margin-bottom: 16px;
+}

@@ -1,0 +1,116 @@
+.MainHeader {
+  background-color: var(--Background-BG-Primary, #21282E);
+  color: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.MainHeader .Profit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.MainHeader .IconXP {
+  width: 24px;
+  height: 24px;
+  display: flex;
+}
+.MainHeader .IconXP svg {
+  width: 100%;
+  height: auto;
+}
+.MainHeader .Info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.MainHeader .Info .Title {
+  color: var(--Content-Tertiary, #7A838C);
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  text-wrap: nowrap;
+}
+.MainHeader .Info .Wrap {
+  display: flex;
+  gap: 4px;
+}
+.MainHeader .Info .Amount {
+  color: var(--Content-Primary, #F6F6F6);
+  font-family: "Poppins";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+.MainHeader .Info .InfoIcon {
+  width: 20px;
+  height: 20px;
+}
+.MainHeader .Info .InfoIcon svg {
+  color: var(--Background-BG-Tertiary, #363D44);
+}
+
+.MainHeader .Wrapper {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+.MainHeader .Coins {
+  display: flex;
+  gap: 1px;
+}
+.MainHeader .Coins .Silver,
+.MainHeader .Coins .Gold {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px;
+}
+.MainHeader .Coins .Silver .Amount,
+.MainHeader .Coins .Gold .Amount {
+  color: var(--Content-Primary, #F6F6F6);
+  font-family: "Poppins";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.MainHeader .Coins .CoinIcon {
+  width: 20px;
+  height: 20px;
+}
+.MainHeader .Wrapper .SettingsIcon svg,
+.MainHeader .Coins .CoinIcon svg {
+  width: 100%;
+  height: auto;
+}
+.MainHeader .Wrapper .SettingsIcon {
+  width: 24px;
+  height: 24px;
+}
+.MainHeader .Coins .Silver {
+  border-radius: 20px 0px 0px 20px;
+  background: var(--Background-BG-Tertiary, #363D44);
+}
+.MainHeader .Coins .Gold {
+  border-radius: 0px 20px 20px 0px;
+  background: #4D4840;
+}
+.MainHeader .Coins .Silver .CoinIcon svg {
+  color: #AAB5C6;
+}
+.MainHeader .Coins .Gold .CoinIcon svg {
+  color: #E6D2A2;
+}
+
+
