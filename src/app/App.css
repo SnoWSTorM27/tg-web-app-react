@@ -13,6 +13,8 @@
 }
 .text {
   text-wrap: wrap;
+  background-color: #5180b6;
+  color: #fff;
 }
 .red {
   margin: 5px;
