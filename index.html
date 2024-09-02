@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,10 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MMA Fighters</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="https://unpkg.com/@esotericsoftware/spine-player@4.2.*/dist/iife/spine-player.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@esotericsoftware/spine-player@4.2.*/dist/spine-player.css">
   </head>
   <body>
     <div id="root"></div>
     <div id="daily"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      new spine.SpinePlayer("player-container", {
+        skeleton: "https://esotericsoftware.com/files/examples/4.2/spineboy/export/spineboy-pro.json",
+        atlas: "https://esotericsoftware.com/files/examples/4.2/spineboy/export/spineboy-pma.atlas"
+      });
+      </script>
   </body>
 </html>
